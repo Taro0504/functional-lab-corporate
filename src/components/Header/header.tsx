@@ -26,9 +26,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="md:hidden relative w-12 h-12 cursor-pointer">
-          <span className="absolute left-4 transition-all duration-400 w-1/2 h-0.5 bg-blue-500 rounded-full"></span>
-          <span className="absolute left-4 transition-all duration-400 w-1/2 h-0.5 bg-blue-500 rounded-full mt-3"></span>
-          <span className="absolute left-4 transition-all duration-400 w-1/2 h-0.5 bg-blue-500 rounded-full mt-6"></span>
+          <span className="absolute left-4 transition-all duration-400 w-1/2 h-1 bg-[#5dc1cf] rounded-md"></span>
+          <span className="absolute left-4 transition-all duration-400 w-1/2 h-1 bg-[#5dc1cf] rounded-md mt-3"></span>
+          <span className="absolute left-4 transition-all duration-400 w-1/2 h-1 bg-[#5dc1cf] rounded-md mt-6"></span>
           <nav id="g-nav" className="hidden">
             <ul className="flex items-center space-x-12 text-black font-bold">
               <li><Link to="/">Home</Link></li>

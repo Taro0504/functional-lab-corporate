@@ -4,8 +4,11 @@ module.exports = {
     `./src/pages/**/*.{js,jsx,ts,tsx}`,
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
+  mode: 'jit',
   theme: {
-    extend: {},
+    extend: {
+      
+    },
   },
   plugins: [],
 }
