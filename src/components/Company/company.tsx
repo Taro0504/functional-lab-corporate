@@ -1,17 +1,21 @@
-import React, { useState } from "react";
-import Img from "gatsby-image";
+import React from "react";
+import { useState } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
-const CompanySection = () => {
+
+
+const Company = () => {
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
   };
 
-const Company = () => {
   return (
+    
     <section id="company" className="py-12 bg-gray-200">
-      <h2 className="text-4xl text-center">Company</h2>
+      <h2 className="text-4xl text-center text-[#5dc1cf] font-future">Company</h2>
       <div className="container mx-auto">
         <h3 className="text-3xl mt-4">FunctionalLabの特徴</h3>
         <p className="text-lg mt-2">
@@ -21,7 +25,7 @@ const Company = () => {
         <div className="flex flex-wrap mt-8">
           <div className="w-1/3 p-4">
             <div className="relative">
-              <Img fluid={/* GraphQLで取得した画像データ */} alt="" />
+              <StaticImage src="../../images/Hero_bg_01.svg" alt="" />
               <span className="absolute top-0 left-0 text-white">Feature-01</span>
             </div>
             <h4 className="text-2xl mt-4">ベース還元率70％、最大85%</h4>

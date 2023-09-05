@@ -9,6 +9,23 @@ module.exports = {
     extend: {
       
     },
+    fontFamily: {
+      body: [
+        "Noto Sans JP",
+        "Helvetica Neue",
+        "Helvetica",
+        "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN",
+        "Arial",
+        "Yu Gothic",
+        "Meiryo",
+        "sans-serif",
+      ],
+      future: [
+        "futura-pt-bold",
+        "sans-serif",
+      ]
+    }
   },
   plugins: [],
 }

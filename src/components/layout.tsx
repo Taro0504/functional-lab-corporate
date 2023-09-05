@@ -7,11 +7,13 @@ import Footer from './Footer/footer';
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <html className="">
+      <body className="">
+        <Header />
+        <Main />
+        <Footer />
+      </body>
+    </html>
   )
 }
 
