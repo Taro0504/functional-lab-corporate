@@ -8,7 +8,7 @@ import Company from '../Company/company';
 
 const Main = () => {
   return (
-    <div>
+    <div className='relative w-full overflow-hidden'>
       <Hero />
       <Mission />
       <Company />

@@ -7,7 +7,7 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
-      
+    
     },
     fontFamily: {
       body: [
@@ -25,7 +25,24 @@ module.exports = {
         "futura-pt-bold",
         "sans-serif",
       ]
-    }
+    },
+    fontSize: {
+      paragraph: "3.24vw",
+      paragraphlg: "19px",
+      head3: "7.4vw",
+      head4: "5.5vw",
+    },
+    lineHeight: {
+      paragraph: "7.4vw",
+      paragraphlg: "43px",
+    },
+    colors: {
+      white: "#ffffff",
+      main: "#5dc1cf",
+      sub: "#bce5ea",
+      orange: "#e96d36",
+      gray: "#f2f2f2",
+    },
   },
   plugins: [],
 }
