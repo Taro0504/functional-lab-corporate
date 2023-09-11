@@ -1,14 +1,13 @@
 // Step 1: Import React
-import * as React from 'react'
-import { Link } from 'gatsby'
-import Layout from '../components/layout'
+import * as React from 'react';
+import Layout from '../components/layout';
+import Main from '../components/TopPage/Main/main';
 
 // Step 2: Define your component
 const IndexPage = () => {
   return (
     <Layout pageTitle={"Home Page"}>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-      <Link to='/about'>About</Link>
+      <Main />
     </Layout>
   )
 }

@@ -21,8 +21,9 @@ module.exports = {
         "Meiryo",
         "sans-serif",
       ],
-      future: [
-        "futura-pt-bold",
+      futura: [
+        "futura-pt",
+        "Jost",
         "sans-serif",
       ]
     },
@@ -42,6 +43,7 @@ module.exports = {
       sub: "#bce5ea",
       orange: "#e96d36",
       gray: "#f2f2f2",
+      text: "#3b4043",
     },
   },
   plugins: [],

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
       <div className="flex items-center justify-between h-[12vw] p-6">
         <div className="w-[17vw] min-w-[150px]">
           <Link to="/">
-            <img src="/logo_header.svg" alt="FunctionalLab" />
+            <StaticImage src="../../../images/logo_header.svg" alt="FunctionalLab" />
           </Link>
         </div>
         <div className="hidden md:flex items-center">

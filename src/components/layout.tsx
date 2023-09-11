@@ -1,16 +1,21 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import Header from './Header/header';
-import Main from './Main/main';
-import Footer from './Footer/footer';
+import Header from './Layout/Header/header';
+import Main from './TopPage/Main/main';
+import Footer from './Layout/Footer/footer';
 
+type LayoutProps = {
+  pageTitle: string,
+  children: React.ReactNode
+}
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children }: LayoutProps) => {
   return (
     <html className="">
+      <head><title>{pageTitle}</title></head>
       <body className="">
         <Header />
-        <Main />
+        {children}
         <Footer />
       </body>
     </html>

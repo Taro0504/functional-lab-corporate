@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
-
-
+import CompanyFlowBox from "./companyFlowBox";
+import WelfareBox from "./welfarebox";
 
 const Company = () => {
 
@@ -15,7 +15,7 @@ const Company = () => {
   return (
     
     <section id="company" className="py-12 bg-[#f2f2f2]">
-      <h2 className="text-[14.8148148148vw] font-bold text-left text-main font-future mx-auto p-[8%] max-w-screen-xl">Company</h2>
+      <h2 className="text-[14.8148148148vw] font-bold text-left text-main font-futura mx-auto p-[8%] max-w-screen-xl">Company</h2>
       <div className="relative container mx-auto max-w-screen-xl">
         <h3 className="relative text-head3 mt-[6vw] px-[8%] text-main ml-[6.5vw] text-left
           before:content-[''] before:bg-sub before:w-[3.7037037037vw] before:h-[3.7037037037vw] 
@@ -104,30 +104,39 @@ const Company = () => {
               エンジニアにとって働きやすい環境を整える事で、私達は社員の自己実現をサポートします。エンジニアにとって最も働きやすいSES企業であることを目指します。
             </p>
           </div>
-          {/* 省略 */}
-        </div>
-
-        <div className="mt-12 p-4">
-          <h3 className="relative text-head3 mt-[6vw] px-[8%] text-main ml-[6.5vw] text-left
-            before:content-[''] before:bg-sub before:w-[3.7037037037vw] before:h-[3.7037037037vw] before:absolute 
-            before:rounded-full before:top-1/2 before:left-0">
-              How it works?</h3>
-          <p className="text- mt-2">
-            最新のWeb技術を駆使したシステム開発を中心に、エンジニア一人ひとりのスキルを活かせます。
-          </p>
-          {/* 省略 */}
         </div>
 
         <div className="mt-12">
-          <button onClick={toggleAccordion} className="text-3xl">
-            Welfare
-          </button>
-          {isOpen && (
-            <div className="mt-4">
-              <p>エンジニアのスキルアップ、ワークライフバランス形成の実現のための要素をご用意しています。</p>
-              {/* 省略 */}
-            </div>
-          )}
+          <h3 className="relative text-head3 mt-[6vw] text-main ml-[6.5vw] text-left
+            before:content-[''] before:bg-sub before:w-[3.7037037037vw] before:h-[3.7037037037vw] before:absolute 
+            before:rounded-full before:top-1/2 before:left-0">
+              How it works?</h3>
+          <p className="text-paragraph leading-paragraph">
+            最新のWeb技術を駆使したシステム開発を中心に、エンジニア一人ひとりのスキルを活かせます。
+          </p>
+
+          <div className="px-[8%]">
+            <CompanyFlowBox step={1} title="紹介" text="当社からお客様へ当社のエンジニアをご紹介" />
+            <CompanyFlowBox step={2} title="依頼" text="当社エンジニアにマッチした案件をお客様から直接お送りいただく" />
+            <CompanyFlowBox step={3} title="選択" text="ご依頼頂いた案件の中から、エンジニアが自身のニーズやスキルなどの条件に合った案件を選択" />
+            <CompanyFlowBox step={4} title="成約" text="お客様と当社エンジニアの諸条件が合った場合ご成約" />
+          </div>
+        </div>
+
+        <div className="">
+          <h3 className="relative text-head3 mt-[6vw] px-[8%] text-main ml-[6.5vw] text-left
+            before:content-[''] before:bg-sub before:w-[3.7037037037vw] before:h-[3.7037037037vw] 
+            before:absolute before:rounded-full before:top-1/2 before:left-0">Welfare</h3>
+          <p className="text-paragraph leading-paragraph px-[8%]">
+            エンジニアのスキルアップ、ワークライフバランス形成の実現のための要素をご用意しています。
+          </p>
+          <div className="p-company-welfare">
+            <WelfareBox imgSrc="../../../images/icon_wel01" title="Money" details={["交通費支給", "時間外手当", "出張手当"]} />
+            <WelfareBox imgSrc="../../images/icon_wel02.svg" title="Guarantee" details={["社会保険完備", "待機時給与補償", "定期健康診断"]} />
+            <WelfareBox imgSrc="../../images/icon_wel03.svg" title="Vacation" details={["有給(入社時10日付与)", "完全週休2日制", "年末年始・慶弔休暇"]} />
+            <WelfareBox imgSrc="../../images/icon_wel04.svg" title="Support" details={["副業サポート", "確定申告サポート"]} />
+            <WelfareBox imgSrc="../../images/icon_wel05.svg" title="Study" details={["教材購入費補助", "セミナー受講費補助", "サービス検証費補助", "資格受験料補助"]} />
+          </div>
         </div>
       </div>
     </section>
