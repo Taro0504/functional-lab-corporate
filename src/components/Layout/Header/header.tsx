@@ -9,8 +9,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 z-50 w-full bg-white">
       <div className="flex items-center justify-between h-[12vw] p-6">
         <div className="w-[17vw] min-w-[150px]">
-          <Link to="/">
-            <StaticImage src="../../../images/logo_header.svg" alt="FunctionalLab" />
+          <Link to="/" className="block">
+            <StaticImage src="../../../images/logo_header.svg" alt="FunctionalLab" className='w-full align-middle'/>
           </Link>
         </div>
         <div className="hidden md:flex items-center">
